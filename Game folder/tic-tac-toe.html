@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="tic-tac-toe.css" >
+</head>
+<body>
+<h1 id="head">Tic-Tac-Toe</h1>
+<main>
+<section>
+<div id="p1_tab">
+<h4 contenteditable="true" id="p1_name">Player 1</h4>
+<h2>Score: <span id="p1_score">0</span></h2>
+<h4>Symbol: <span id="p1_symbol"></span></h4>
+</div>
+</section>
+<section id="cont" >
+<table>
+<tr>
+<td id="bolck1_1" onclick="mark(this);"></td>
+<td id="bolck1_2" onclick="mark(this);"></td>
+<td id="bolck1_3" onclick="mark(this);"></td>
+<td id="bolck1_4" onclick="mark(this);"></td>
+<td id="bolck1_5" onclick="mark(this);"></td>
+</tr>
+<tr>
+<td id="bolck2_1" onclick="mark(this);"></td>
+<td id="bolck2_2" onclick="mark(this);"></td>
+<td id="bolck2_3" onclick="mark(this);"></td>
+<td id="bolck2_4" onclick="mark(this);"></td>
+<td id="bolck2_5" onclick="mark(this);"></td>
+</tr>
+<tr>
+<td id="bolck3_1" onclick="mark(this);"></td>
+<td id="bolck3_2" onclick="mark(this);"></td>
+<td id="bolck3_3" onclick="mark(this);"></td>
+<td id="bolck3_4" onclick="mark(this);"></td>
+<td id="bolck3_5" onclick="mark(this);"></td>
+</tr>
+<tr>
+<td id="bolck4_1" onclick="mark(this);"></td>
+<td id="bolck4_2" onclick="mark(this);"></td>
+<td id="bolck4_3" onclick="mark(this);"></td>
+<td id="bolck4_4" onclick="mark(this);"></td>
+<td id="bolck4_5" onclick="mark(this);"></td>
+</tr>
+<tr>
+<td id="bolck5_1" onclick="mark(this);"></td>
+<td id="bolck5_2" onclick="mark(this);"></td>
+<td id="bolck5_3" onclick="mark(this);"></td>
+<td id="bolck5_4" onclick="mark(this);"></td>
+<td id="bolck5_5" onclick="mark(this);"></td>
+</tr>
+</table>
+</section>
+<h2 id="result_tab">Result : <span id="result_line"></span></h2>
+<section>
+<div id="p2_tab">
+<h4 id="p2_name" contenteditable="true">Player 2</h4>
+<h2>Score: <span id="p2_score">0</span></h2>
+<h4>Symbol: <span id="p2_symbol"></span></h4>
+</div>
+</section>
+<section>
+<button id="reset" onclick="reset();">Reset</button>
+<button id="finish" onclick="finish_game();">Finish</button>
+</section>
+</main>
+</body>
+<script type="text/javascript" src="tic-tac-toe.js"></script>
+</html>
